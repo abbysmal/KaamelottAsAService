@@ -30,7 +30,7 @@ vif = ['bridge=xenbr0']
 And then run the VM via `xl create -c www.xl`
 
 Example quotation:
-```
+```json
 
 {
   quote: "Ca s'enferme les registres ! (Glaucia : Ah bon ? ) Ouais ! Et les trous du cul qui font pas leur boulot ça s'enferme aussi ! ",
