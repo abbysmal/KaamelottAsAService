@@ -33,8 +33,8 @@ Example quotation:
 ```json
 
 {
-  quote: "Ca s'enferme les registres ! (Glaucia : Ah bon ? ) Ouais ! Et les trous du cul qui font pas leur boulot ça s'enferme aussi ! ",
-  meta: "Capito, Livre VI, 1 : Miles Ignotus"
+  "quote": "Ca s'enferme les registres ! (Glaucia : Ah bon ? ) Ouais ! Et les trous du cul qui font pas leur boulot ça s'enferme aussi ! ",
+  "meta": "Capito, Livre VI, 1 : Miles Ignotus"
 }
 
 ```
