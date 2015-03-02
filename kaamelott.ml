@@ -39,9 +39,8 @@ module Main (C:CONSOLE) (FS:KV_RO) (S:Cohttp_lwt.Server) = struct
       return @@ List.nth quotes (Random.int (List.length quotes)) in
 
     let rec dispatcher _ =
-      let headers =
-        Cohttp.Header.add_opt None "content-type" "application/json" |>
-        Cohttp.Header.add "Access-Control-Allow-Origin" "*" in
+      let h = Cohttp.Header.add_opt None "content-type" "application/json" in
+      let headers = Cohttp.Header.add h "Access-Control-Allow-Origin" "*" in
       get_random_quote ()
       >>= fun body ->
         S.respond_string ~status:`OK ~body ~headers ()
